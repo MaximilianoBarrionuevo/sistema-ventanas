@@ -1,3 +1,3 @@
-const perfiles = ["Tecnoperfiles"]
+const perfiles = ["MarcaPerfil"]
 
 export default perfiles;

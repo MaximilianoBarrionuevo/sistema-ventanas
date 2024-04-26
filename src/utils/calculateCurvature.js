@@ -27,7 +27,7 @@ function drawWindow(containerId, base, height, arrowHeight, curvatureRadius, pro
     let curveTotalHeight = height + arrowHeight;
 
     if (tipoInput === "Ojo de buey") {
-        curveTotalHeight = base; // En caso de ojo de buey, la altura total es igual a la base
+        curveTotalHeight = base;
     }
 
     const containerDiv = document.createElement('div');
@@ -44,10 +44,10 @@ function drawWindow(containerId, base, height, arrowHeight, curvatureRadius, pro
 
     if (tipoInput === "Ojo de buey") {
         const circle = document.createElementNS(svgNS, 'circle');
-        const diameter = base - profileThickness; // Diámetro ajustado para tener en cuenta el ancho de la línea
+        const diameter = base - profileThickness; 
         const radius = diameter / 2;
         const centerX = base / 2;
-        const centerY = curveTotalHeight / 2; // Posicionando el círculo en el centro verticalmente
+        const centerY = curveTotalHeight / 2;
         circle.setAttribute('cx', centerX);
         circle.setAttribute('cy', centerY);
         circle.setAttribute('r', radius);
