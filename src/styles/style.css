@@ -1,0 +1,254 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-image: url(https://ss-static-001.esmsv.com/r/content/host1/1e6f2a1086c0d78092a9033d289697ee/editor/Screenshot%202023-06-28%20at%205.19.34%20PM.webp);
+}
+
+.img-header {
+  height: 80px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 1px;
+}
+
+input {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #89b60e;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+#windowDrawing {
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  /* Centrar el contenido horizontalmente */
+  align-items: center;
+  /* Centrar el contenido verticalmente */
+  height: 100%;
+  /* Asegurar que el div ocupe toda la altura del contenedor */
+}
+
+.contenedor-imagen {
+  display: flex;
+  justify-content: center;
+  /* Centrar el contenido horizontalmente */
+  align-items: center;
+  /* Centrar el contenido verticalmente */
+}
+
+.header {
+  background-color: #89b60e;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.contenido-form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 10px;
+  margin: 40px 20px;
+}
+
+.footer {
+  padding: 9px;
+  background-color: #89b60e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-footer {
+  color: white;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-size: 26px;
+}
+
+.contenedor-footer {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.contenido-footer {
+  color: white;
+  display: flex;
+  gap: 0 5px;
+}
+
+.contendor-main {
+  display: flex;
+  gap: 0 30px;
+  margin: 10px;
+}
+
+.contenedor-izquierdo {
+  flex: 1;
+}
+
+.contenedor-derecho {
+  flex: 2;
+}
+
+.contenedor-imagen {
+  height: 460px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.contenedor-materiales {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px 10px;
+}
+
+.contenedor-doble-columna {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.input-doble {
+  width: 100%;
+}
+
+legend {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+select {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.contenedor-botones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: span 2;
+  gap: 15px;
+  /* Espacio entre elementos */
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.doble {
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+
+/* Estilo para el contenedor principal */
+#ventanas-container {
+  background-color: white;
+  padding: 20px;
+}
+
+/* Estilo para cada ventana */
+.ventana {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* Estilo para las celdas de la tabla */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 4px 8px;
+}
+
+th {
+  width: auto;
+}
+
+td {
+  height: 20px;
+  text-align: center;
+  width: auto;
+}
+
+.svg-element {
+  display: grid;
+  justify-items: center;
+}
+
+.ventana-referencia {
+  margin: 25px 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 25px;
+  width: 100%;
+}
+
+.tabla {
+  height: 60px;
+}
+
+.tabla-obra {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+}
+
+@media print {
+  :first-page {
+    display: none;
+  }
+
+  @page {
+    margin: 0px;
+  }
+
+  .ventana {
+    height: 90vh;
+    page-break-before: always;
+  }
+}
